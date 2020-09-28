@@ -93,12 +93,12 @@ class KindleParser(HTMLParser):
             self.b_text = False
 
 
-def process():
-    book1 = "../notebooks/On Earth We're Briefly Gorgeous - Notebook.xml"
-    book2 = "../notebooks/The Art of Communicating - Notebook.xml"
-    book3 = "../notebooks/The Life-Changing Magic of Tidying Up - Notebook.xml"
-    book4 = "../notebooks/The Power of Habit - Notebook.xml"
-    with open(book4, 'r') as file:
+def process(filepath):
+    #book1 = "../notebooks/On Earth We're Briefly Gorgeous - Notebook.xml"
+    #book2 = "../notebooks/The Art of Communicating - Notebook.xml"
+    #book3 = "../notebooks/The Life-Changing Magic of Tidying Up - Notebook.xml"
+    #book4 = "../notebooks/The Power of Habit - Notebook.xml"
+    with open(filepath, 'r') as file:
         file_text = file.read()
         parser = KindleParser()
         parser.feed(file_text)
@@ -106,6 +106,7 @@ def process():
         print(parser.kindle_book,"\n")
         for quotation in parser.list_of_quotations:
             print(quotation, "\n")
+        file.close() 
 
 
 
