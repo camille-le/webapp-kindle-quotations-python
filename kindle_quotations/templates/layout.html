@@ -28,7 +28,7 @@
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
-                      <a class="nav-item nav-link" href="{{ url_for('home') }}">About</a>
+                      <a class="nav-item nav-link" href="{{ url_for('upload') }}">Upload</a>
                       <a class="nav-item nav-link" href="{{ url_for('home') }}">Contact</a>
                     </div>
                 </div>
@@ -37,15 +37,7 @@
     </header>
     <main role="main" class="container">
       <div class="content-section">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed purus vel tortor volutpat sagittis. Suspendisse vel commodo enim. Mauris ut sodales neque. Aenean semper aliquet justo nec rutrum. Mauris quis velit scelerisque, semper leo suscipit, eleifend diam. Duis consectetur ultricies velit, ac vulputate diam hendrerit eu. Sed euismod blandit odio, vitae aliquet mauris suscipit eget. Integer nec bibendum erat.
-
-Nunc dignissim luctus dui, sit amet suscipit lorem pellentesque quis. Nunc convallis rhoncus ornare. Etiam mattis arcu sem, in ornare neque tempor vel. Ut eleifend tellus eget laoreet accumsan. Praesent ut nunc ut augue elementum venenatis. Mauris vestibulum gravida vulputate. Praesent maximus justo at egestas cursus.
-
-Proin sodales ultricies erat, non suscipit ante suscipit vitae. Ut ultrices diam sed mollis luctus. Phasellus leo velit, imperdiet ac mollis a, maximus luctus sem. Sed interdum dolor massa, vitae consectetur quam vestibulum lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sagittis nulla id felis finibus, nec facilisis nibh sollicitudin. Pellentesque sit amet pharetra nibh, euismod volutpat libero. Phasellus sed bibendum mi. Fusce a eros a sapien posuere efficitur et et libero. Mauris sapien ligula, ultrices in viverra in, pretium at libero. Etiam at pellentesque neque, eget maximus lorem. Suspendisse lacinia eu risus quis semper. Nulla laoreet cursus ligula eu mollis. Donec malesuada, metus a accumsan gravida, libero diam porttitor erat, in ullamcorper est lectus non ante.
-
-Maecenas dictum eleifend elit congue tincidunt. In eu cursus sem. Donec feugiat et nisi congue ornare. Integer congue laoreet elit vel tristique. Quisque id augue in tortor fermentum dapibus eu nec elit. Aliquam imperdiet volutpat lacus commodo suscipit. Suspendisse viverra lacinia lorem at consectetur. Sed sit amet justo tellus. Aenean bibendum, tellus vel ultrices fringilla, nisl tellus posuere quam, a varius nibh ex eget ligula. Cras ac nunc massa. Praesent pharetra dapibus finibus. Morbi sapien dui, sodales sed tempus sed, viverra ut tellus.
-
-Integer placerat lorem ac orci ullamcorper imperdiet. Proin vel justo dapibus, vestibulum nunc sed, maximus urna. Donec viverra dapibus enim, et rhoncus tellus ultricies sed. Donec ultrices justo at dui imperdiet aliquet. Proin ultricies lobortis leo quis sodales. Cras nulla ligula, tempor nec pulvinar eu, mollis et metus. Etiam cursus dolor quis sapien tincidunt euismod.
+      {% block content %}{% endblock %}   
       </div>
    
     </main>

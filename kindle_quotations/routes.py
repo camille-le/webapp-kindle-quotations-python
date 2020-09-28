@@ -1,5 +1,7 @@
+import os 
 import random
-from flask import render_template, url_for, flash, redirect 
+from flask import render_template, url_for, flash, redirect, request 
+from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
 
@@ -16,7 +18,10 @@ def home():
     #book_citation = book_blob[2]
 
     #return "<h2>Random Quotations:</h2>" + book_title +"<br>"
-    #+ book_author + "<br>" + book_citation + "<br>" + book_blob[rand_num]
-    
-    
+    #+ book_author + "<br>" + book_citation + "<br>" + book_blob[rand_num]        
     return render_template('home.html') 
+
+@app.route("/upload", methods=['GET', 'POST'])
+def upload():       
+    # if request.method == 'POST' 
+    return render_template('upload.html')
