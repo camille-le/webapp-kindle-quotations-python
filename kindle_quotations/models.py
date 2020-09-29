@@ -8,6 +8,7 @@ state
 """
 
 from html.parser import HTMLParser
+import csv
 
 
 class KindleBook:
@@ -94,22 +95,27 @@ class KindleParser(HTMLParser):
 
 
 def process(filepath):
-    #book1 = "../notebooks/On Earth We're Briefly Gorgeous - Notebook.xml"
-    #book2 = "../notebooks/The Art of Communicating - Notebook.xml"
-    #book3 = "../notebooks/The Life-Changing Magic of Tidying Up - Notebook.xml"
-    #book4 = "../notebooks/The Power of Habit - Notebook.xml"
-    with open(filepath, 'r') as file:
+    with open(filepath, 'r', encoding='MacRoman') as file:
         file_text = file.read()
+
         parser = KindleParser()
         parser.feed(file_text)
-
-        print(parser.kindle_book,"\n")
-        for quotation in parser.list_of_quotations:
-            print(quotation, "\n")
         file.close() 
+        
+        kindle_book = parser.kindle_book
+        kindle_quotations = parser.list_of_quotations
 
+        output_file = filepath.split("/")[1].split(".")[0] + ".csv"    
 
+        with open(output_file, mode='w', encoding='MacRoman') as output_file_csv: 
+            file_writer = csv.writer(output_file_csv, delimiter=',', quoting=csv.QUOTE_MINIMAL)            
+            file_writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
+            for quotation in kindle_quotations: 
+                file_writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
+                quotation.page_number, quotation.text, quotation.section_heading])        
+            output_file_csv.close()
 
-
+        
+     
 
     

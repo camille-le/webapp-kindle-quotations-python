@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+The Power of Habit
+</div>
+<div class="authors">
+Duhigg, Charles
+</div>
+<div class="citation">
+Citation (Chicago Style): Duhigg, Charles. <i>The Power of Habit</i>. Random House, 2012. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Prologue: The Habit Cure
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page xiv
+</div>
+<div class="noteText">
+She would start running half- marathons, and then a marathon, go back to school, buy a house, and get engaged. Eventually she was recruited into the scientists’ study, and when researchers began examining images of Lisa’s brain, they saw something remarkable: One set of neurological patterns— her old habits— had been overridden by new patterns. They could still see the neural activity of her old behaviors, but those impulses were crowded out by new urges. As Lisa’s habits changed, so had her brain.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page xix
+</div>
+<div class="noteText">
+“Understanding habits is the most important thing I’ve learned in the army,” the major told me. “It’s changed everything about how I see the world. You want to fall asleep fast and wake up feeling good? Pay attention to your nighttime patterns and what you automatically do when you get up. You want to make running easy? Create triggers to make it a routine. I drill my kids on this stuff.
+</div>
+<div class="sectionHeading">
+Part One: The Habits of Individuals
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1. The Habit Loop: How Habits Work >  Page 17
+</div>
+<div class="noteText">
+Habits, scientists say, emerge because the brain is constantly looking for ways to save effort. Left to its own devices, the brain will try to make almost any routine into a habit, because habits allow our minds to ramp down more often. This effort-saving instinct is a huge advantage.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1. The Habit Loop: How Habits Work >  Page 19
+</div>
+<div class="noteText">
+This process within our brains is a three-step loop. First, there is a cue, a trigger that tells your brain to go into automatic mode and which habit to use. Then there is the routine, which can be physical or mental or emotional. Finally, there is a reward, which helps your brain figure out if this particular loop is worth remembering for the future:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2. The Craving Brain: How to Create New Habits >  Page 47
+</div>
+<div class="noteText">
+They create neurological cravings. Most of the time, these cravings emerge so gradually that we’re not really aware they exist, so we’re often blind to their influence. But as we associate cues with certain rewards, a subconscious craving emerges in our brains that starts the habit loop spinning.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2. The Craving Brain: How to Create New Habits >  Page 48
+</div>
+<div class="noteText">
+“But once our brain learns that a doughnut box contains yummy sugar and other carbohydrates, it will start anticipating the sugar high. Our brains will push us toward the box. Then, if we don’t eat the doughnut, we’ll feel disappointed.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2. The Craving Brain: How to Create New Habits >  Page 52
+</div>
+<div class="noteText">
+unthinkingly. “In some ways,” he told me, “we’re like the monkeys. When we see the chicken or fries on the table, our brains begin anticipating that food, even if we’re not hungry. Our brains are craving them. Frankly, I don’t even like this kind of food, but suddenly, it’s hard to fight this urge. And as soon as I eat it, I feel this rush of pleasure as the craving is satisfied. It’s humiliating, but that’s how habits work.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2. The Craving Brain: How to Create New Habits >  Page 59
+</div>
+<div class="noteText">
+Cravings are what drive habits. And figuring out how to spark a craving makes creating a new habit easier. It’s as true now as it was almost a century ago.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 63
+</div>
+<div class="noteText">
+THE GOLDEN RULE OF HABIT CHANGE You Can’t Extinguish a Bad Habit, You Can Only Change It.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 84
+</div>
+<div class="noteText">
+Researchers began finding that habit replacement worked pretty well for many people until the stresses of life—such as finding out your mom has cancer, or your marriage is coming apart—got too high, at which point alcoholics often fell off the wagon.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 85
+</div>
+<div class="noteText">
+Once people learned how to believe in something, that skill started spilling over to other parts of their lives, until they started believing they could change. Belief was the ingredient that made a reworked habit loop into a permanent behavior.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 89
+</div>
+<div class="noteText">
+But we do know that for habits to permanently change, people must believe that change is feasible.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 92
+</div>
+<div class="noteText">
+If you want to lose weight, study your habits to determine why you really leave your desk for a snack each day, and then find someone else to take a walk with you,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. The Golden Rule of Habit Change: Why Transformation Occurs >  Page 92
+</div>
+<div class="noteText">
+The evidence is clear: If you want to change a habit, you must find an alternative routine, and your odds of success go up dramatically when you commit to changing as part of a group. Belief is essential, and it grows out of a communal experience, even if that community is only as large as two people.
+</div>
+<div class="sectionHeading">
+Part Two: The Habits of Successful Organizations
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 98
+</div>
+<div class="noteText">
+Next would come an excoriation of taxes, business regulations, and sometimes, with a fervor that suggested firsthand experience in divorce court, lawyers. Finally, the speech would end with a blizzard of buzzwords—“synergy,”“rightsizing,” and “co-opetition”—at which point everyone could return to their offices, reassured that capitalism was safe for another day.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 100
+</div>
+<div class="noteText">
+I knew I had to transform Alcoa,” O’Neill told me. “But you can’t order people to change. That’s not how the brain works. So I decided I was going to start by focusing on one thing. If I could start disrupting the habits around one thing, it would spread throughout the entire company.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 101
+</div>
+<div class="noteText">
+Lists were how he organized his life. In college at Fresno State—where he finished his courses in a bit over three years, while also working thirty hours a week—O’Neill had drafted a list of everything he hoped to accomplish during his lifetime, including, near the top, “Make a Difference.” After graduating in 1960, at a friend’s encouragement, O’Neill picked up an application for a federal internship and, along with three hundred thousand others, took the government employment exam.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 102
+</div>
+<div class="noteText">
+Bureaucrats and politicians, rather than making decisions, were responding to cues with automatic routines in order to get rewards such as promotions or reelection. It was the habit loop—spread across thousands of people and billions of dollars.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 108
+</div>
+<div class="noteText">
+When people start habitually exercising, even as infrequently as once a week, they start changing other, unrelated patterns in their lives, often unknowingly. Typically, people who exercise start eating better and becoming more productive at work.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 109
+</div>
+<div class="noteText">
+as “small wins.” They help other habits to flourish by creating new structures, and they establish cultures where change becomes contagious.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 113
+</div>
+<div class="noteText">
+“Small wins do not combine in a neat, linear, serial form, with each step being a demonstrable step closer to some predetermined goal,” wrote Karl Weick, a prominent organizational psychologist. “More common is the circumstance where small wins are scattered…like miniature experiments that test implicit theories about resistance and opportunity and uncover both resources and barriers that were invisible before the situation was stirred up.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 119
+</div>
+<div class="noteText">
+And O’Neill’s habit of constantly pushing other bureaucrats to continue researching until they found a problem’s root causes overhauled how the government thought about problems like infant mortality.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 121
+</div>
+<div class="noteText">
+“I started thinking about meals differently. It gave me a system for thinking about food without becoming depressed.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 123
+</div>
+<div class="noteText">
+This is the final way that keystone habits encourage widespread change: by creating cultures where new values become ingrained.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 124
+</div>
+<div class="noteText">
+For instance, when researchers studied an incoming class of cadets at West Point, they measured their grade point averages, physical aptitude, military abilities, and self-discipline.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 124
+</div>
+<div class="noteText">
+...than a factor researchers referred to as “grit,” which they defined as the tendency to work “strenuously toward challenges, maintaining effort and interest over years despite failure, adversity, and plateaus in progress.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4. Keystone Habits, or The Ballad of Paul O’Neill: Which Habits Matter Most >  Page 124
+</div>
+<div class="noteText">
+To succeed, they need a keystone habit that creates a culture—such as a daily gathering of like-minded friends—to help find the strength to overcome obstacles.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 130
+</div>
+<div class="noteText">
+“Your apron is a shield,” he told her. “Nothing anyone says will ever hurt you. You will always be as strong as you want to be.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 131
+</div>
+<div class="noteText">
+“Self-discipline predicted academic performance more robustly than did IQ. Self-discipline also predicted which students would improve their grades over the course of the school year, whereas IQ did not….Self-discipline has a bigger effect on academic performance than does intellectual talent.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 132
+</div>
+<div class="noteText">
+Unless baristas are trained to put aside their personal problems, the emotions of some employees will inevitably spill into how they treat customers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 133
+</div>
+<div class="noteText">
+If you knew how to avoid the temptation of a marshmallow as a preschooler, it seemed, you also knew how to get yourself to class on time and finish your homework once you got older, as well as how to make friends and resist peer pressure.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 137
+</div>
+<div class="noteText">
+“There’s been more than two hundred studies on this idea since then, and they’ve all found the same thing. Willpower isn’t just a skill. It’s a muscle, like the muscles in your arms or legs, and it gets tired as it works harder, so there’s less power left over for other things.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 138
+</div>
+<div class="noteText">
+After two months, the researchers scrutinized the rest of the participants’ lives to see if increased willpower at the gym resulted in greater willpower at home. Before the experiment began, most of the subjects were self-professed couch potatoes. Now, of course, they were in better physical shape. But they were also healthier in other parts of their lives, as well. The more time they spent at the gym, the fewer cigarettes they smoked and the less alcohol, caffeine, and junk food they consumed. They were spending more hours on homework and fewer watching TV. They were less depressed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 139
+</div>
+<div class="noteText">
+As people strengthened their willpower muscles in one part of their lives—in the gym, or a money management program—that strength spilled over into what they ate or how hard they worked.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 139
+</div>
+<div class="noteText">
+“When you learn to force yourself to go to the gym or start your homework or eat a salad instead of a hamburger, part of what’s happening is that you’re changing how you think,” said Todd Heatherton, a researcher at Dartmouth who has worked on willpower studies. “People get better at regulating their impulses. They learn how to distract themselves from temptations. And once you’ve gotten into that willpower groove, your brain is practiced at helping you focus on a goal.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 140
+</div>
+<div class="noteText">
+“When you learn to force yourself to practice for an hour or run fifteen laps, you start building self-regulatory strength. A five-year-old who can follow the ball for ten minutes becomes a sixth grader who can start his homework on time.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 140
+</div>
+<div class="noteText">
+But when companies like Starbucks tried to apply the willpower lessons from the radish-and-cookie studies to the workplace, they encountered difficulties. They sponsored weight-loss classes and offered employees free gym memberships, hoping the benefits would spill over to how they served coffee.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 143
+</div>
+<div class="noteText">
+Put another way, the patients’ plans were built around inflection points when they knew their pain—and thus the temptation to quit—would be strongest. The patients were telling themselves how they were going to make it over the hump.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 144
+</div>
+<div class="noteText">
+But the patients who didn’t write out any plans were at a significant disadvantage, because they never thought ahead about how to deal with painful inflection points. They never deliberately designed willpower habits. Even if they intended to walk around the block, their resolve abandoned them when they confronted the agony of the first few steps.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 146
+</div>
+<div class="noteText">
+This is how willpower becomes a habit: by choosing a certain behavior ahead of time, and then following that routine when an inflection point arrives. When the Scottish patients filled out their booklets, or Travis studied the LATTE method, they decided ahead of time how to react to a cue—a painful muscle or an angry customer. When the cue arrived, the routine occurred.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 149
+</div>
+<div class="noteText">
+“I’ve been really lucky,” he said. “And I really, genuinely believe that if you tell people that they have what it takes to succeed, they’ll prove you right.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5. Starbucks and the Habit of Success: When Willpower Becomes Automatic >  Page 153
+</div>
+<div class="noteText">
+Travis wakes up early, takes an extra-long shower, plans out his day in careful detail, and then drives to work. He always arrives on time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 159
+</div>
+<div class="noteText">
+Destructive organizational habits can be found within hundreds of industries and at thousands of firms. And almost always, they are the products of thoughtlessness, of leaders who avoid thinking about the culture and so let it develop without guidance. There are no organizations without institutional habits. There are only places where they are deliberately designed, and places where they are created without forethought, so they often grow from rivalries or fear.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 161
+</div>
+<div class="noteText">
+Rather, dozens of habits, processes, and behaviors converged until it seemed like red was the inevitable choice.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 161
+</div>
+<div class="noteText">
+Routines provide the hundreds of unwritten rules that companies need to operate. They allow workers to experiment with new ideas without having to ask for permission at every step.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 162
+</div>
+<div class="noteText">
+But among the most important benefits of routines is that they create truces between potentially warring groups or individuals within an organization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 162
+</div>
+<div class="noteText">
+Rather, most workplaces are made up of fiefdoms where executives compete for power and credit, often in hidden skirmishes that make their own performances appear superior and their rivals’ seem worse. Divisions compete for resources and sabotage each other to steal glory. Bosses pit their subordinates against one another so that no one can mount a coup. Companies aren’t families. They’re battlefields in a civil war.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 163
+</div>
+<div class="noteText">
+The salespeople all get together every January and agree to limit how many discounts they offer in order to protect the company’s profits, and at the end of the year everyone gets a raise.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 163
+</div>
+<div class="noteText">
+It’s okay to be ambitious, but if you play too rough, your peers will unite against you. On the other hand, if you focus on boosting your own department, rather than undermining your rival, you’ll probably get taken care of over time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 164
+</div>
+<div class="noteText">
+If you could somehow diagram all your work habits—and the informal power structures, relationships, alliances, and conflicts they represent—and then overlay your diagram with diagrams prepared by your colleagues, it would create a map of your firm’s secret hierarchy, a guide to who knows how to make things happen and who never seems to get ahead of the ball.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 165
+</div>
+<div class="noteText">
+The ones who have formed the right truces and found the right alliances. Truces are so important that new fashion labels usually succeed only if they are headed by people who left other fashion companies on good terms.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 165
+</div>
+<div class="noteText">
+But what they really produced was a guide to surviving in corporate America.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 166
+</div>
+<div class="noteText">
+That’s a good start. Unfortunately, it isn’t enough. Creating successful organizations isn’t just a matter of balancing authority. For an organization to work, leaders must cultivate habits that both create a real and balanced peace and, paradoxically, make it absolutely clear who’s in charge.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 168
+</div>
+<div class="noteText">
+The tightly prescribed chain of command at the Underground prohibited him from contacting another department without a superior’s direct authorization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 168
+</div>
+<div class="noteText">
+And from that truce arose policies that told Brickell: Looking for fires isn’t your job. Don’t overstep your bounds.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 175
+</div>
+<div class="noteText">
+Unlike at Rhode Island Hospital, each truce created a genuine balance of power. No department had the upper hand.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 175
+</div>
+<div class="noteText">
+No one person, department, or baron had ultimate responsibility for passengers’ safety.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 175
+</div>
+<div class="noteText">
+Sometimes, one priority—or one department or one person or one goal—needs to overshadow everything else, though it might be unpopular or threaten the balance of power that keeps trains running on time. Sometimes, a truce can create dangers that outweigh any peace.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 175
+</div>
+<div class="noteText">
+All those leaders seized the possibilities created by a crisis. During turmoil, organizational habits become malleable enough to both assign responsibility and create a more equitable balance of power. Crises are so valuable, in fact, that sometimes it’s worth stirring up a sense of looming catastrophe rather than letting it die down.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 180
+</div>
+<div class="noteText">
+A company with dysfunctional habits can’t turn around simply because a leader orders it. Rather, wise executives seek out moments of crisis—or create the perception of crisis—and cultivate the sense that something must change, until everyone is finally ready to overhaul the patterns they live with each day.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. The Power of a Crisis: How Leaders Create Habits Through Accident : and Design >  Page 181
+</div>
+<div class="noteText">
+“Doctor,” the twenty-seven-year-old Ward said, “I want to remind everyone that we have to pause before the first and second procedures. You didn’t mention that, and I just want to make sure we remember.” It was the type of comment that, a few years ago, might have earned her a rebuke. Or ended her career. “Thanks for adding that,” the surgeon said. “I’ll remember to mention it next time.
+</div>
+<div class="sectionHeading">
+Part Three: The Habits of Societies
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 217
+</div>
+<div class="noteText">
+A movement starts because of the social habits of friendship and the strong ties between close acquaintances.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 219
+</div>
+<div class="noteText">
+When Parks was arrested, however, it sparked something unusual within the city. Rosa Parks, unlike other people who had been jailed for violating the bus segregation law, was deeply respected and embedded within her community. So when she was arrested, it triggered a series of social habits—the habits of friendship—that ignited an initial protest. Parks’s membership in dozens of social networks across Montgomery allowed her friends to muster a response before the community’s normal apathy could take hold.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 219
+</div>
+<div class="noteText">
+“Rosa Parks was one of those rare people of whom everyone agreed that she gave more than she got,” Branch wrote in his history of the civil rights movement, Parting the Waters. “Her character represented one of the isolated high blips on the graph of human nature, offsetting a dozen or so sociopaths.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 220
+</div>
+<div class="noteText">
+“Rosa Parks transcended the social stratifications of the black community and Montgomery as a whole. She was friends with field hands and college professors.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 221
+</div>
+<div class="noteText">
+Nixon and Durr went to the jailhouse, posted bail for Parks, and took her home. They’d been looking for the perfect case to challenge Montgomery’s bus segregation laws, and sensing an opportunity, they asked Parks if she would be willing to let them fight her arrest in court. Parks’s husband was opposed to the idea. “The white folks will kill you, Rosa,” he told her.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 222
+</div>
+<div class="noteText">
+There’s a natural instinct embedded in friendship, a sympathy that makes us willing to fight for someone we like when they are treated unjustly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 222
+</div>
+<div class="noteText">
+People who hardly knew Rosa Parks decided to participate because of a social peer pressure—an influence known as “the power of weak ties”—that made it difficult to avoid joining in.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 224
+</div>
+<div class="noteText">
+In fact, in landing a job, Granovetter discovered, weak-tie acquaintances were often more important than strong-tie friends because weak ties give us access to social networks where we don’t otherwise belong.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 224
+</div>
+<div class="noteText">
+On the other hand, our weak-tie acquaintances—the people we bump into every six months—are the ones who tell us about jobs we would otherwise never hear about.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 224
+</div>
+<div class="noteText">
+“Individuals with few weak ties will be deprived of information from distant parts of the social system and will be confined to the provincial news and views of their close friends. This deprivation will not only insulate them from the latest ideas and fashions but may put them in a disadvantaged position in the labor market, where advancement can depend…on knowing about appropriate job openings at just the right time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 225
+</div>
+<div class="noteText">
+So there is a tool that activists have long relied upon to compel protest, even when a group of people don’t necessarily want to participate. It’s a form of persuasion that has been remarkably effective over hundreds of years. It’s the sense of obligation that neighborhoods or communities place upon themselves. In other words, peer pressure.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 225
+</div>
+<div class="noteText">
+The habits of peer pressure, however, have something in common. They often spread through weak ties. And they gain their authority through communal expectations. If you ignore the social obligations of your neighborhood, if you shrug off the expected patterns of your community, you risk losing your social standing. You endanger your access to many of the social benefits that come from joining the country club, the alumni association, or the church in the first place.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 228
+</div>
+<div class="noteText">
+They all know you’ve been accepted to Freedom Summer, and that you’ve said you want to go. Good luck pulling out at that point. You’d lose a huge amount of social standing. Even if you’re having second thoughts, there’s real consequences if you withdraw. You’ll lose the respect of people whose opinions matter to you.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 229
+</div>
+<div class="noteText">
+However, some were embedded in communities where social habits—the expectations of their friends and the peer pressure of their acquaintances—compelled participation, so regardless of their hesitations, they bought a bus ticket. Others—who also cared about civil rights—belonged to communities where the social habits pointed in a slightly different direction, so they thought to themselves, Maybe I’ll just stay home.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 232
+</div>
+<div class="noteText">
+The community was pressured to stand together for fear that anyone who didn’t participate wasn’t someone you wanted to be friends with in the first place.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 234
+</div>
+<div class="noteText">
+“We’ve thought long and hard about habitualizing faith, breaking it down into pieces,” Warren told me. “If you try to scare people into following Christ’s example, it’s not going to work for too long. The only way you get people to take responsibility for their spiritual maturity is to teach them habits of faith.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 235
+</div>
+<div class="noteText">
+“How to Handle Discouragement,”“How to Feel Good About Yourself,”“How to Raise Healthy Families,” and “How to Survive Under Stress.” His lessons were easy to understand, focused on real, daily problems, and could be applied as soon as parishioners left church.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 237
+</div>
+<div class="noteText">
+So, after he returned from his leave, Warren assigned every Saddleback member to a small group that met every week. It was one of the most important decisions he ever made, because it transformed church participation from a decision into a habit that drew on already-existing social urges and patterns.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 240
+</div>
+<div class="noteText">
+‘Love your enemies; bless them that curse you; pray for them that despitefully use you.’”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 240
+</div>
+<div class="noteText">
+It was the message of nonviolence that King had been increasingly preaching for weeks. Its theme, which drew on the writings of Gandhi and Jesus’s sermons, was in many ways an argument listeners hadn’t heard in this context before, a plea for nonviolent activism, overwhelming love and forgiveness of their attackers, and a promise that it would bring victory.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8. Saddleback Church and the Montgomery Bus Boycott: How Movements Happen >  Page 244
+</div>
+<div class="noteText">
+Movements don’t emerge because everyone suddenly decides to face the same direction at once. They rely on social patterns that begin as the habits of friendship, grow through the habits of communities, and are sustained by new habits that change participants’ sense of self.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 252
+</div>
+<div class="noteText">
+“Sleepwalking is a reminder that wake and sleep are not mutually exclusive,” Mark Mahowald, a professor of neurology at the University of Minnesota and a pioneer in understanding sleep behaviors, told me. “The part of your brain that monitors your behavior is asleep, but the parts capable of very complex activities are awake. The problem is that there’s nothing guiding the brain except for basic patterns, your most basic habits. You follow what exists in your head, because you’re not capable of making a choice.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 254
+</div>
+<div class="noteText">
+Sleepwalkers can behave in complex ways—for instance, they can open their eyes, see, move around, and drive a car or cook a meal—all while essentially unconscious, because the parts of their brain associated with seeing, walking, driving, and cooking can function while they are asleep without input from the brain’s more advanced regions, such as the prefrontal cortex. Sleepwalkers have been known to boil water and make tea. One operated a motorboat. Another turned on an electric saw and started feeding in pieces of wood before going back to bed. But in general, sleepwalkers will not do things that are dangerous to themselves or others. Even asleep, there’s an instinct to avoid peril.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 255
+</div>
+<div class="noteText">
+These areas of the brain are the same ones studied by Dr. Larry Squire and the scientists at MIT, who found the neurological machinery of the habit loop. To a neurologist, in fact, a brain experiencing a sleep terror looks very similar to a brain following a habit.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 261
+</div>
+<div class="noteText">
+The company assigned players a “predicted lifetime value,” and software built calendars that anticipated how often they would visit and how much they would spend. The company tracked customers through loyalty cards and mailed out coupons for free meals and cash vouchers; telemarketers called people at home to ask where they had been. Casino employees were trained to encourage visitors to discuss their lives, in the hopes they might reveal information that could be used to predict how much they had to gamble with. One Harrah’s executive called this approach “Pavlovian marketing.” The company ran thousands of tests each year to perfect their methods. Customer tracking had increased the company’s profits by billions of dollars, and was so precise they could track a gambler’s spending to the cent and minute.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 266
+</div>
+<div class="noteText">
+The areas of the brain that Habib scrutinized in his experiment— the basal ganglia and the brain stem—are the same regions where habits reside (as well as where behaviors related to sleep terrors start). In the past decade, as new classes of pharmaceuticals have emerged that target that region—such as medications for Parkinson’s disease—we’ve learned a great deal about how sensitive some habits can be to outside stimulation. Class action lawsuits in the United States, Australia, and Canada have been filed against drug manufacturers, alleging that pharmaceuticals caused patients to compulsively bet, eat, shop, and masturbate by targeting the circuitry involved in the habit loop. In 2008, a federal jury in Minnesota awarded a patient $8.2 million in a lawsuit against a drug company after the man claimed that his medication had caused him to gamble away more than $250,000. Hundreds of similar cases are pending.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 270
+</div>
+<div class="noteText">
+“Some thinkers,” Aristotle wrote in Nicomachean Ethics, “hold that it is by nature that people become good, others that it is by habit, and others that it is by instruction.” For Aristotle, habits reigned supreme. The behaviors that occur unthinkingly are the evidence of our truest selves, he said. So “just as a piece of land has to be prepared beforehand if it is to nourish the seed, so the mind of the pupil has to be prepared in its habits if it is to enjoy and dislike the right things.” Habits are not as simple as they appear. As I’ve tried to demonstrate throughout this book, habits—even once they are rooted in our minds—aren’t destiny. We can choose our habits, once we know how. Everything we know about habits, from neurologists studying amnesiacs and organizational experts remaking companies, is that any of them can be changed, if you understand how they function. Hundreds of habits influence our days—they guide how we get dressed in the morning, talk to our kids, and fall asleep at night; they impact what we eat for lunch, how we do business, and whether we exercise or have a beer after work. Each of them has a different cue and offers a unique reward. Some are simple and others are complex, drawing upon emotional triggers and offering subtle neurochemical prizes. But every habit, no matter its complexity, is malleable.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 270
+</div>
+<div class="noteText">
+However, to modify a habit, you must decide to change it. You must consciously accept the hard work of identifying the cues and rewards that drive the habits’ routines, and find alternatives. You must know you have control and be self-conscious enough to use it—and every chapter in this book is devoted to illustrating a different aspect of why that control is real.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 271
+</div>
+<div class="noteText">
+But almost all the other patterns that exist in most people’s lives—how we eat and sleep and talk to our kids, how we unthinkingly spend our time, attention, and money—those are habits that we know exist. And once you understand that habits can change, you have the freedom—and the responsibility—to remake them. Once you understand that habits can be rebuilt, the power of habit becomes easier to grasp, and the only option left is to get to work.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 273
+</div>
+<div class="noteText">
+Once we choose who we want to be, people grow “to the way in which they have been exercised, just as a sheet of paper or a coat, once creased or folded, tends to fall forever afterward into the same identical folds.”
+</div>
+<div class="sectionHeading">
+Afterword: Some Things Learned About Weight Loss, Smoking, Procrastination, and Teaching
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 277
+</div>
+<div class="noteText">
+People who successfully maintain weight loss typically eat breakfast every morning. They also weigh themselves each day. Part of the reason why these habits matter is practical: Eating a healthy breakfast makes it less likely you will snack later in the day, according to studies. And frequently measuring your weight allows us—sometimes almost subconsciously—to see how changing our diets influences the pounds lost.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 281
+</div>
+<div class="noteText">
+That’s what I had learned: You need to overhaul your life. And I figured I could do the same thing. But I realized that I needed to focus on one thing at a time. Smoking was my keystone habit. If I wanted to quit, I had to approach the problem like a scientist and do experiments and focus on just one thing: giving up cigarettes. I even posted a little note on my mirror: “Focus on changing your keystone habit.” That’s it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 283
+</div>
+<div class="noteText">
+Pratt: One of the courses I teach is a freshman seminar whose main purpose is to give students a chance to step back from all the details of their first semester, look at their college experience, and try to learn what’s working for them and what isn’t. We used the ideas in the book to create weekly “life-hack reports,” where students look at what they’re doing, choose one goal they want to reach,
+</div>
+<div class="sectionHeading">
+Appendix: A Reader’s Guide to Using These Ideas
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 287
+</div>
+<div class="noteText">
+As a result, this book doesn’t contain one prescription. Rather, I hoped to deliver something else: a framework for understanding how habits work and a guide to experimenting with how they might change. Some habits yield easily to analysis and influence. Others are more complex and obstinate, and require prolonged study. And for others, change is a process that never fully concludes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 290
+</div>
+<div class="noteText">
+Rewards are powerful because they satisfy cravings. But we’re often not conscious of the cravings that drive our behaviors. When the Febreze marketing team discovered that consumers desired a fresh scent at the end of a cleaning ritual, for example, they had found a craving that no one even knew existed. It was hiding in plain sight. Most cravings are like this: obvious in retrospect, but incredibly hard to see when we are under their sway.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 291
+</div>
+<div class="noteText">
+As you test four or five different rewards, you can use an old trick to look for patterns: After each activity, jot down on a piece of paper the first three things that come to mind when you get back to your desk. They can be emotions, random thoughts, reflections on how you’re feeling, or just the first three words that pop into your head.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9. The Neurology of free Will: Are We Responsible for Our Habits? >  Page 298
+</div>
+<div class="noteText">
+But at about 3:30 every day, I absentmindedly stand up, look around the newsroom for someone to talk to, spend ten minutes gossiping about the news, and then go back to my desk. It occurs almost without me thinking about it. It has become a habit. Obviously, changing some habits can be more difficult. But this framework is a place to start. Sometimes change takes a long time. Sometimes it requires repeated experiments and failures. But once you understand how a habit operates—once you diagnose the cue, the routine and the reward—you gain power over it.
+</div>
+
+        </div>
+    </body>
+</html>
