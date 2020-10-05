@@ -1,4 +1,5 @@
 from html.parser import HTMLParser
+from flask import Response
 import csv
 
 
@@ -114,7 +115,14 @@ def process(filepath):
             quotation.page_number, quotation.text, quotation.section_heading])        
         output_file_csv.close()
 
-        
+        return Response(output_file, mimetype="text/csv", headers={"Content-disposition":"attachment; filename=damlevels.csv"})
+    
+    # with open(output_file) as file:
+    #     s = file.read() + '\n'
+    # return repr(s)
+
+
+
      
 
     

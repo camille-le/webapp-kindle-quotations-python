@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}   
-I'm baby distillery vice raw denim art party, listicle gentrify pop-up gastropub master cleanse pok pok yuccie heirloom. Pok pok tbh pug cloud bread vinyl swag slow-carb kale chips af lo-fi disrupt. Flannel williamsburg roof party, seitan man braid occupy sriracha deep v kombucha lyft small batch. Lo-fi blue bottle enamel pin raclette la croix. Subway tile try-hard jianbing etsy migas williamsburg locavore beard biodiesel tumblr lo-fi yr normcore cardigan. Cliche fingerstache meh, cardigan gentrify vice irony subway tile VHS leggings pok pok hella helvetica.
-<br><br>
-Put a bird on it freegan snackwave crucifix, irony yuccie art party hella pabst gentrify cardigan gastropub you probably haven't heard of them. Readymade cloud bread raw denim, distillery tbh beard vexillologist la croix. Activated charcoal blue bottle cold-pressed viral forage. Gochujang cliche tumeric, fixie gastropub sartorial shoreditch biodiesel asymmetrical humblebrag marfa leggings. IPhone tacos shabby chic freegan, chillwave intelligentsia bespoke cloud bread crucifix pour-over fingerstache tbh gochujang.
+<h2>Upload Kindle XML File</h2>
+
+<form method=post enctype=multipart/form-data action="{{ url_for('home') }}">
+    <input type=file name=file>   
+    <input type=submit value=Upload>
+</form>
+
+
 {% endblock content %}   

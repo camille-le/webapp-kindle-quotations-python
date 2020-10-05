@@ -1,6 +1,6 @@
 import os 
 import random
-from flask import render_template, url_for, flash, redirect, request, send_from_directory 
+from flask import render_template, url_for, flash, redirect, request, send_from_directory, make_response
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
@@ -21,13 +21,8 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/")
-@app.route("/home")
-def home():    
-    return render_template('home.html') 
-
-@app.route("/upload", methods=['GET', 'POST'])
-def upload(): 
-    
+@app.route("/home", methods=['GET','POST'])
+def home():            
     if request.method == 'POST':        
         # check if the post request has the file part 
         if 'file' not in request.files:
@@ -42,15 +37,22 @@ def upload():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))       
-            convert_xml_to_csv(filename)            
+            # convert_xml_to_csv(filename)            
+            download(filename)
             return redirect(url_for('uploaded_file', filename=filename))
-    return render_template('upload.html')    
+    return render_template('home.html') 
     
-
-def convert_xml_to_csv(filename):
+@app.route('/download') 
+#def convert_xml_to_csv(filename):
+def download(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
-    process(filepath) 
-    
+    csv = process(filepath)     
+    #response = make_response(csv)    
+    #response.headers["Content-Disposition"] = "attachment; filename=export.csv"
+    #response.headers["Content-type"] = "text/csv"
+    # response.mimetype='text/csv'
+    #return response
+
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):    
