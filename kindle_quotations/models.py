@@ -1,12 +1,3 @@
-"""
-Program to transform an XML document into a Python object
-* super().__init__() allows you to build classes that easily extend the functionality of previous built classes
-without implementing their functionality again
-* __str__ is a special method, like __init__, that returns a string representation of the object
-* __init__ is a method, similar to constructions in C++ and Java, which is used to initialize the object's
-state
-"""
-
 from html.parser import HTMLParser
 import csv
 
@@ -89,31 +80,39 @@ class KindleParser(HTMLParser):
         elif self.b_page_number:
             self.curr_page_number = data
         elif self.b_text:
-            last_book = self.list_of_quotations[-1]
-            last_book.text = data
+            last_book = self.list_of_quotations[-1]                                    
+            last_book.text = data             
             self.b_text = False
 
 
 def process(filepath):
-    with open(filepath, 'r', encoding='MacRoman') as file:
+
+    # Create Kindle Book and Kindle Quotations in Memory
+    kindle_book = None 
+    kindle_quotations = None
+
+    # Read file into UTF-8 
+    with open(filepath, 'r', encoding='utf-8') as file:        
         file_text = file.read()
 
         parser = KindleParser()
         parser.feed(file_text)
-        file.close() 
         
         kindle_book = parser.kindle_book
         kindle_quotations = parser.list_of_quotations
+        file.close() 
 
-        output_file = filepath.split("/")[1].split(".")[0] + ".csv"    
+    # Declare output file         
+    output_file = filepath.split("/")[-1].split(".")[0] + ".csv"    
 
-        with open(output_file, mode='w', encoding='MacRoman') as output_file_csv: 
-            file_writer = csv.writer(output_file_csv, delimiter=',', quoting=csv.QUOTE_MINIMAL)            
-            file_writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
-            for quotation in kindle_quotations: 
-                file_writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
-                quotation.page_number, quotation.text, quotation.section_heading])        
-            output_file_csv.close()
+    # Write to CSV File Format 
+    with open(output_file, mode='w', encoding='utf-8') as output_file_csv: 
+        file_writer = csv.writer(output_file_csv, delimiter=',', quoting=csv.QUOTE_MINIMAL)            
+        file_writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
+        for quotation in kindle_quotations: 
+            file_writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
+            quotation.page_number, quotation.text, quotation.section_heading])        
+        output_file_csv.close()
 
         
      
