@@ -36,22 +36,20 @@ def home():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))       
-            # convert_xml_to_csv(filename)            
-            download(filename)
-            return redirect(url_for('uploaded_file', filename=filename))
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))           
+            return download(filename)
+            # return redirect(url_for('uploaded_file', filename=filename))
     return render_template('home.html') 
     
-@app.route('/download') 
 #def convert_xml_to_csv(filename):
 def download(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
     csv = process(filepath)     
-    #response = make_response(csv)    
-    #response.headers["Content-Disposition"] = "attachment; filename=export.csv"
-    #response.headers["Content-type"] = "text/csv"
-    # response.mimetype='text/csv'
-    #return response
+    response = make_response(csv)    
+    response.headers["Content-Disposition"] = "attachment; filename=export.csv"
+    response.headers["Content-type"] = "text/csv"
+    response.mimetype='text/csv'
+    return response
 
 
 @app.route('/uploads/<filename>')

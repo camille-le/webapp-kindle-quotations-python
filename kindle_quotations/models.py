@@ -114,12 +114,10 @@ def process(filepath):
             file_writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
             quotation.page_number, quotation.text, quotation.section_heading])        
         output_file_csv.close()
-
-        return Response(output_file, mimetype="text/csv", headers={"Content-disposition":"attachment; filename=damlevels.csv"})
-    
-    # with open(output_file) as file:
-    #     s = file.read() + '\n'
-    # return repr(s)
+        
+    with open(output_file) as file:
+        s = file.read() + '\n'
+    return repr(s)
 
 
 
