@@ -66,5 +66,7 @@ _How to run tests (with code examples)_
 * Blogposts 
 * Contributors 
 
+* [MySQL Commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm) 
+
 
 ## License

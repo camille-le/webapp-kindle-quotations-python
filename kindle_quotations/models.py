@@ -1,6 +1,7 @@
 from html.parser import HTMLParser
 from flask import Response
 import csv
+import io 
 
 
 class KindleBook:
@@ -84,6 +85,12 @@ class KindleParser(HTMLParser):
             last_book.text = data             
             self.b_text = False
 
+class CsvTextBuilder(object):
+    def __init__(self):
+        self.csv_string = []
+
+    def write(self, row):
+        self.csv_string.append(row)
 
 def process(filepath):
 
@@ -102,21 +109,17 @@ def process(filepath):
         kindle_quotations = parser.list_of_quotations
         file.close() 
 
-    # Declare output file         
-    output_file = filepath.split("/")[-1].split(".")[0] + ".csv"    
+    # Return string format of csv file 
+    csvfile = CsvTextBuilder() 
+    writer = csv.writer(csvfile)
+    writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
+    for quotation in kindle_quotations: 
+        writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
+        quotation.page_number, quotation.text, quotation.section_heading])        
+    csv_string = csvfile.csv_string    
+    return ''.join(csv_string) 
 
-    # Write to CSV File Format 
-    with open(output_file, mode='w', encoding='utf-8') as output_file_csv: 
-        file_writer = csv.writer(output_file_csv, delimiter=',', quoting=csv.QUOTE_MINIMAL)            
-        file_writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
-        for quotation in kindle_quotations: 
-            file_writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
-            quotation.page_number, quotation.text, quotation.section_heading])        
-        output_file_csv.close()
-        
-    with open(output_file) as file:
-        s = file.read() + '\n'
-    return repr(s)
+
 
 
 

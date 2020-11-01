@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <!-- HTML5 -->
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+        .bodyContainer {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .notebookFor {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(119, 119, 119);
+            margin: 24px 0px 0px;
+            padding: 0px;
+        }
+
+        .bookTitle {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            color: #333333;
+            margin-top: 22px;
+            padding: 0px;
+        }
+
+        .authors {
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(119, 119, 119);
+            margin-top: 22px;
+            margin-bottom: 24px;
+            padding: 0px;
+        }
+
+        .citation {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            color: #333333;
+            margin-top: 22px;
+            margin-bottom: 24px;
+            padding: 0px;
+        }
+
+        .sectionHeading {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+            color: #333333;
+            margin-top: 24px;
+            padding: 0px;
+        }
+
+        .noteHeading {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: left;
+            color: #333333;
+            margin-top: 20px;
+            padding: 0px;
+        }
+
+        .noteText {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+            color: #333333;
+            margin: 2px 0px 0px;
+            padding: 0px;
+        }
+
+        .highlight_blue {
+            color: rgb(178, 205, 251);
+        }
+
+        .highlight_orange {
+            color: #ffd7ae;
+        }
+
+        .highlight_pink {
+            color: rgb(255, 191, 206);
+        }
+
+        .highlight_yellow {
+            color: rgb(247, 206, 0);
+        }
+
+        .notebookGraphic {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .notebookGraphic img {
+            -o-box-shadow:      0px 0px 5px #888;
+            -icab-box-shadow:   0px 0px 5px #888;
+            -khtml-box-shadow:  0px 0px 5px #888;
+            -moz-box-shadow:    0px 0px 5px #888;
+            -webkit-box-shadow: 0px 0px 5px #888;
+            box-shadow:         0px 0px 5px #888;
+            max-width: 100%;
+            height: auto;
+        }
+
+        hr {
+            border: 0px none;
+            height: 1px;
+            background: none repeat scroll 0% 0% rgb(221, 221, 221);
+        }
+
+    </style>
+    <script type="text/javascript">
+
+    </script>
+    <title></title>
+</head>
+<body>
+<div class="bodyContainer">
+    <div class="notebookFor">
+        Notebook for
+    </div>
+    <div class="bookTitle">
+        On Earth We're Briefly Gorgeous
+    </div>
+    <div class="authors">
+        Vuong, Ocean
+    </div>
+    <div class="citation">
+        Citation (APA): Vuong, O. (2019). <i>On Earth We're Briefly Gorgeous</i> [Kindle Android version]. Retrieved from Amazon.com
+    </div>
+    <hr />
+
+    <div class="sectionHeading">
+        Part I
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 18
+    </div>
+    <div class="noteText">
+        “Finish it.” She pointed with her chin at the bowl. “Every grain of rice you leave behind is one maggot you eat in hell.” She removed the rubber band from her wrist and tied her hair in a bun.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 19
+    </div>
+    <div class="noteText">
+        Phosphorescent streaks raked up the purple, light-polluted sky and shredded into huge explosions that reverberated through our apartment.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 31
+    </div>
+    <div class="noteText">
+        No object is in a constant relationship with pleasure, wrote Barthes. For the writer, however, it is the mother tongue. But what if the mother tongue is stunted? What if that tongue is not only the symbol of a void, but is itself a void, what if the tongue is cut out? Can one take pleasure in loss without losing oneself entirely? The Vietnamese I own is the one you gave me, the one whose diction and syntax reach only the second-grade level.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 32
+    </div>
+    <div class="noteText">
+        So began my career as our family’s official interpreter. From then on, I would fill in our blanks, our silences, stutters, whenever I could. I code switched. I took off our language and wore my English, like a mask, so that others would see my face, and therefore yours.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 64
+    </div>
+    <div class="noteText">
+        Outside, the hummingbird’s whirring sounds almost like human breath. Its beak jabs into the pool of sugared water at the feeder’s base. What a terrible life, I think now, to have to move so fast just to stay in one place.
+    </div>
+    <div class="sectionHeading">
+        Part II
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 79
+    </div>
+    <div class="noteText">
+        Your hands are hideous—and I hate everything that made them that way. I hate how they are the wreck and reckoning of a dream. How you’d come home, night after night, plop down on the couch, and fall asleep inside a minute. I’d come back with your glass of water and you’d already be snoring, your hands in your lap like two partially scaled fish.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 80
+    </div>
+    <div class="noteText">
+        A new immigrant, within two years, will come to know that the salon is, in the end, a place where dreams become the calcified knowledge of what it means to be awake in American bones—with or without citizenship—aching, toxic, and underpaid. I hate and love your battered hands for what they can never be.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 91
+    </div>
+    <div class="noteText">
+        In the nail salon, sorry is a tool one uses to pander until the word itself becomes currency. It no longer merely apologizes, but insists, reminds: I’m here, right here, beneath you. It is the lowering of oneself so that the client feels right, superior, and charitable. In the nail salon, one’s definition of sorry is deranged into a new word entirely, one that’s charged and reused as both power and defacement at once. Being sorry pays, being sorry even, or especially, when one has no fault, is worth every self-deprecating syllable the mouth allows. Because the mouth must eat.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 156
+    </div>
+    <div class="noteText">
+        The children, the veal, they stand very still because tenderness depends on how little the world touches you. To stay tender, the weight of your life cannot lean on your bones.
+    </div>
+    <div class="sectionHeading">
+        Part III
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 179
+    </div>
+    <div class="noteText">
+        But why can’t the language for creativity be the language of regeneration? You killed that poem, we say. You’re a killer. You came in to that novel guns blazing. I am hammering this paragraph, I am banging them out, we say. I owned that workshop. I shut it down. I crushed them. We smashed the competition. I’m wrestling with the muse. The state, where people live, is a battleground state. The audience a target audience. “Good for you, man,” a man once said to me at a party, “you’re making a killing with poetry. You’re knockin’’em dead.”
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 181
+    </div>
+    <div class="noteText">
+        They say addiction might be linked to bipolar disorder. It’s the chemicals in our brains, they say. I got the wrong chemicals, Ma. Or rather, I don’t get enough of one or the other. They have a pill for it. They have an industry. They make millions. Did you know people get rich off of sadness? I want to meet the millionaire of American sadness. I want to look him in the eye, shake his hand, and say, “It’s been an honor to serve my country.”
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 182
+    </div>
+    <div class="noteText">
+        By 2002, prescriptions of OxyContin for noncancer pain increased nearly ten times, with total sales reaching over $3 billion.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 185
+    </div>
+    <div class="noteText">
+        They will want you to succeed, but never more than them. They will write their names on your leash and call you necessary, call you urgent.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 198
+    </div>
+    <div class="noteText">
+        We try to preserve life—even when we know it has no chance of enduring its body. We feed it, keep it comfortable, bathe it, medicate it, caress it, even sing to it. We tend to these basic functions not because we are brave or selfless but because, like breath, it is the most fundamental act of our species: to sustain the body until time leaves it behind.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 238
+    </div>
+    <div class="noteText">
+        I think of the time Trev and I sat on the toolshed roof, watching the sun sink. I wasn’t so much surprised by its effect—how, in a few crushed minutes, it changes the way things are seen, including ourselves—but that it was ever mine to see. Because the sunset, like survival, exists only on the verge of its own disappearing. To be gorgeous, you must first be seen, but to be seen allows you to be hunted.
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 240
+    </div>
+    <div class="noteText">
+        Ma, I don’t know if you’ve made it this far in this letter—or if you’ve made it here at all. You always tell me it’s too late for you to read, with your poor liver, your exhausted bones, that after everything you’ve been through, you’d just like to rest now. That reading is a privilege you made possible for me with what you lost. I know you believe in reincarnation. I don’t know if I do but I hope it’s real. Because then maybe you’ll come back here next time around. Maybe you’ll be a girl and maybe your name will be Rose again, and you’ll have a room full of books with parents who will read you bedtime stories in a country not touched by war. Maybe then, in that life and in this future, you’ll find this book and you’ll know what happened to us. And you’ll remember me. Maybe.
+    </div>
+    <div class="sectionHeading">
+        Acknowledgments
+    </div>
+    <div class="noteHeading">
+        Highlight (<span class="highlight_yellow">yellow</span>) -  Page 245
+    </div>
+    <div class="noteText">
+        Thank you for always reminding me that rules are merely tendencies, not truths, and genre borders only as real as our imaginations small.
+    </div>
+
+</div>
+</body>
+</html>
