@@ -30,11 +30,10 @@ class KindleParser(HTMLParser):
 
     def __init__(self):
         super().__init__()
-        # Boolean Flags to handle parsing
+        
         self.b_title, self.b_authors, self.b_citation = False, False, False
         self.b_section_heading, self.b_page_number, self.b_text = False, False, False
-
-        # Default values as empty until they are found
+        
         self.title, self.authors, self.citation = "", "", ""
         self.section_heading, self.curr_page_number = "(empty)", ""
 

@@ -37,11 +37,10 @@ def home():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))           
-            return download(filename)
-            # return redirect(url_for('uploaded_file', filename=filename))
+            return download(filename)            
     return render_template('home.html') 
     
-#def convert_xml_to_csv(filename):
+
 def download(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
     csv = process(filepath)     
@@ -53,8 +52,10 @@ def download(filename):
 
 
 @app.route('/uploads/<filename>')
-def uploaded_file(filename):    
-   #return send_from_directory(app.config['DOWNLOAD_FOLDER'], filename, as_attachment=True) 
+def uploaded_file(filename):       
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
 
-    
+
+@app.route('/contact')    
+def contact(): 
+    return render_template('contact.html')
