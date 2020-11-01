@@ -1,4 +1,4 @@
-## Kindle Quotations App Project 
+## Kindle Quotations Project
 This project helps people transform their saved quotations from Kindle eBooks into machine-
 readable or Excel/Google Sheets-friendly formats (CSV). 
 
