@@ -1,11 +1,18 @@
 {% extends "layout.html" %}
 {% block content %}   
-<h2>Upload Kindle XML File</h2>
+
+<h2>Random Quotation</h2> 
+
+
+<button id="new-quote">Get New Quote!</button>
+
+<br><br>
+
+<h2>XML to CSV Conversion</h2>
 
 <form method=post enctype=multipart/form-data action="{{ url_for('home') }}">
-    <input type=file name=file>   
+    <input type=file name=file><br><br>    
     <input type=submit value=Upload>
 </form>
-
 
 {% endblock content %}   
