@@ -4,6 +4,7 @@ from flask import render_template, url_for, flash, redirect, request, send_from_
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
+import io; io.StringIO()
 
 
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
@@ -35,20 +36,31 @@ def home():
             flash('No file selected')
             return redirect(request.url)
         if file and allowed_file(file.filename):
+            # Save the file to local storage 
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))           
-            return download(filename)            
+            return download(filename)  
+            
     return render_template('home.html') 
     
 
 def download(filename):
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
-    csv = process(filepath)     
-    response = make_response(csv)    
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)     
+    data = process(filepath) # returns a string with newlines 
+    
+    # Create StringIO object and write string data 
+    output = io.StringIO() 
+    output.write(data)
+
+    # Retrieve StringIO file contents 
+    contents = output.getvalue() 
+
+    # Write StringIO file contents to a response with CSV format; download as export.csv 
+    response = make_response(contents) 
     response.headers["Content-Disposition"] = "attachment; filename=export.csv"
     response.headers["Content-type"] = "text/csv"
     response.mimetype='text/csv'
-    return response
+    return response        
 
 
 @app.route('/uploads/<filename>')
