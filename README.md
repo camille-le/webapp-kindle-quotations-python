@@ -1,8 +1,13 @@
 ## Kindle Quotations App Project 
-This is a project to transform the a file of quotations saved from a Kindle eBook into 
-machine-readable formats. Because the Kindle app does not provide a means of 
-extracting saved quotations data, this project seeks to provide multiple methods for a 
-person to access their quotations data, without manual parsing work. 
+This project helps people transform their saved quotations from Kindle eBooks into machine-
+readable or Excel/Google Sheets-friendly formats (CSV). 
+
+Currently, with the Kindle app, you can email your favorite quotations to yourself, in the
+form of an HTML document with CSS formatting. However, the Kindle app does not provide a 
+way for a person or computer to easily extract the quotations data. 
+
+This project provides a solution through a web-app, eliminating the need for manual
+parsing work. 
 
 Here is a live version of this project: 
 https://blastoise.pythonanywhere.com
@@ -23,7 +28,7 @@ https://blastoise.pythonanywhere.com
 
 
 ## Installation
-Below is an example of how to get a developmnet environment running. 
+Below is an example of how to get a development environment running. 
 
 This is an app written in python3 and Flask. Once you have Python3 installed, add
 the following libraries: 
