@@ -15,8 +15,8 @@ https://blastoise.pythonanywhere.com
 
 Sample Input (HTML/CSS) and Output Files (CSV): 
 <div>
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" max-width="50%" style="float:left"/>
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" max-width="50%" style="float:right"/>
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" max-width="400px" style="float:left"/>
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" max-width="400px" style="float:right"/>
  </div> 
 
 ## Tech/Frameworks Used
