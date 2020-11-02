@@ -56,18 +56,9 @@ in debug mode.
 button and upload. The file will download as a csv relative to your project. 
 
 
-## How to use this project?
-
-
-## Tests
-
-
-## Contribute
-[contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
-
 ## Credits (Repos, Articles, Blogposts)
 
 _Articles:_ 
 * [MySQL Commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm) 
 * [Handling File Uploads with Flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask) 
-* ["Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
+* [Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
