@@ -4,9 +4,9 @@ from flask import render_template, url_for, flash, redirect, request, send_from_
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
+from kindle_quotations.forms import HTMLtoCSVForm
 import io; io.StringIO()
 
-import json
 
 
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
@@ -76,5 +76,6 @@ def uploaded_file(filename):
 
 @app.route('/contact')    
 def contact(): 
-    return render_template('contact.html')
+    form = HTMLtoCSVForm() 
+    return render_template('contact.html', title="Testing HTML to CSV", form=form)
 

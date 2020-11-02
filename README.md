@@ -29,6 +29,7 @@ This is an app written in python3 and Flask. Once you have Python3 installed, ad
 ```bash 
 $ pip3 install flask 
 $ pip3 install flask_sqlalchemy
+$ pip3 install flask_wtf
 ```
 Note, in case you get an error like this: 
 ```
@@ -62,4 +63,5 @@ button and upload. The file will download as a csv relative to your project.
 _Articles:_ 
 * [MySQL Commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm) 
 * [Handling File Uploads with Flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask) 
-* ["Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
+* [Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
+* [Flask-WTF Documentation](https://flask-wtf.readthedocs.io/en/latest/form.html#module-flask_wtf.file)

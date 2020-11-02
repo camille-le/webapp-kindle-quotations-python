@@ -7,4 +7,22 @@
     like me. :-) 
 </p> 
 
+    
+    <h2>HTML/XML to CSV</h2>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+            
+        <div class="input-group">
+            <div class="custom-file">              
+              {{ form.filename(class="custom-file-input") }}              
+              {{ form.filename.label(class="custom-file-label") }}              
+            </div>
+            <div class="input-group-append">                        
+              <p>{{ form.submit(class="btn btn-outline-secondary") }}</p>
+            </div>        
+        </div>
+        
+    </form>
+
+
 {% endblock content %}   
