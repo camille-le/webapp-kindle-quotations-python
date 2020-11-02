@@ -48,12 +48,10 @@ in debug mode.
 button and upload. The file will download as a csv relative to your project. 
 
 
-
 ## How to use this project?
 
 
 ## Tests
-_How to run tests (with code examples)_ 
 
 
 ## Contribute
