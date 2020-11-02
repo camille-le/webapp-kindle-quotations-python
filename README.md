@@ -13,8 +13,6 @@ https://blastoise.pythonanywhere.com
 Sample Input File (HTML with CSS Formatting, loaded in Browser): 
 
 <img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300"/>
-
-Sample Output File (CSV Format, loaded in Google Sheets): 
 <img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" width="200"/>
 
 ## Tech/Frameworks Used
