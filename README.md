@@ -11,10 +11,10 @@ https://blastoise.pythonanywhere.com
  
 ## Screenshots
 Sample Input File (HTML with CSS Formatting, loaded in Browser): 
-![Sample export from Kindle app](https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png) 
+![Sample export from Kindle app](https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png =200px) 
 
 Sample Output File (CSV Format, loaded in Google Sheets): 
-![Sample output file from web-app](https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png) 
+![Sample output file from web-app](https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png =200px) 
 
 ## Tech/Frameworks Used
 <b>Built with</b>
