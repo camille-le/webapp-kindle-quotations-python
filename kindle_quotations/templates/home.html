@@ -1,18 +1,31 @@
 {% extends "layout.html" %}
 {% block content %}   
 
-<h2>Random Quotation</h2> 
-
-
-<button id="new-quote">Get New Quote!</button>
-
-<br><br>
-
-<h2>XML to CSV Conversion</h2>
 
 <form method=post enctype=multipart/form-data action="{{ url_for('home') }}">
-    <input type=file name=file><br><br>    
-    <input type=submit value=Upload>
+    <h2>HTML/XML to CSV</h2>
+    <div class="input-group">
+        <div class="custom-file">
+          <input type="file" name="file" class="custom-file-input" id="inputGroupFile04">
+          <label class="custom-file-label" for="inputGroupFile04" id="inputGroupFile04-label">Choose File</label>
+        </div>
+        <div class="input-group-append">          
+          <input class="btn btn-outline-secondary" type=submit name="download" value="Download CSV">
+        </div>        
+    </div>
+    <br><br> 
+    
+    <!-- <h2>HTML/XML to JSON</h2>
+    <div class="input-group">
+        <div class="custom-file">
+          <input type="file" name="file" class="custom-file-input" id="inputGroupFile05">
+          <label class="custom-file-label" for="inputGroupFile05" id="inputGroupFile05-label">Choose File</label>
+        </div>
+        <div class="input-group-append">          
+          <input class="btn btn-outline-secondary" type=submit name="download" value="Download JSON">
+        </div>
+    </div> -->
+    
 </form>
 
 {% endblock content %}   

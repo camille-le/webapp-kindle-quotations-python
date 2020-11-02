@@ -85,6 +85,7 @@ class KindleParser(HTMLParser):
             last_book.text = data             
             self.b_text = False
 
+
 class CsvTextBuilder(object):
     def __init__(self):
         self.csv_string = []
@@ -92,7 +93,7 @@ class CsvTextBuilder(object):
     def write(self, row):
         self.csv_string.append(row)
 
-def process(filepath):
+def process(filepath, filetype):
 
     # Create Kindle Book and Kindle Quotations in Memory
     kindle_book = None 
@@ -110,14 +111,23 @@ def process(filepath):
         file.close() 
 
     # Return string format of csv file 
-    csvfile = CsvTextBuilder() 
-    writer = csv.writer(csvfile)
-    writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
-    for quotation in kindle_quotations: 
-        writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
-        quotation.page_number, quotation.text, quotation.section_heading])        
-    csv_string = csvfile.csv_string    
-    return ''.join(csv_string) 
+    if filetype == 'csv':         
+        csvfile = CsvTextBuilder() 
+        writer = csv.writer(csvfile)
+        writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
+        for quotation in kindle_quotations: 
+            writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
+            quotation.page_number, quotation.text, quotation.section_heading])        
+        csv_string = csvfile.csv_string    
+        return ''.join(csv_string) 
+    elif filetype == 'json': 
+        kindle_dict = [] 
+        for quotation in kindle_quotations: 
+            kindle_dict.append({ "title": kindle_book.title, "authors": kindle_book.authors,
+            "citation": kindle_book.citation, "page_number": quotation.page_number, 
+            "text": quotation.text, "section_heading": quotation.section_heading})             
+        return kindle_dict
+    return '' 
 
 
 
