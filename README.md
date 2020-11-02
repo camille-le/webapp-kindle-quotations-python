@@ -12,11 +12,11 @@ https://blastoise.pythonanywhere.com
 <img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_input.png" alt="Sample web-app"/> 
  
 ## Screenshots
-Sample Input File (HTML with CSS Formatting, loaded in Browser): 
 
+Sample Input (HTML/CSS) and Output Files (CSV): 
 <div>
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300" style="float:left"/>
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" width="300" style="float:right"/>
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" max-width="50%" style="float:left"/>
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" max-width="50%" style="float:right"/>
  </div> 
 
 ## Tech/Frameworks Used
