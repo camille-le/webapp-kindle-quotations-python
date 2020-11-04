@@ -8,8 +8,13 @@ provide a way for a person or computer to easily extract the quotations data.
 
 Here is a demo of this project: 
 https://blastoise.pythonanywhere.com
+
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_input.png" alt="Sample web-app"/> 
  
 ## Screenshots
+
+<img src="kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300"/>
+<img src="kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" width="200" style="float:right"/>
 
 ## Tech/Frameworks Used
 <b>Built with</b>
@@ -49,19 +54,13 @@ in debug mode.
 button and upload. The file will download as a csv relative to your project. 
 
 
-## How to use this project?
-
-
-## Tests
-
-
-## Contribute
-[contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
-
 ## Credits (Repos, Articles, Blogposts)
 
 _Articles:_ 
 * [MySQL Commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm) 
 * [Handling File Uploads with Flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask) 
 * [Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
+<<<<<<< HEAD
 * [Flask-WTF Documentation](https://flask-wtf.readthedocs.io/en/latest/form.html#module-flask_wtf.file)
+=======
+>>>>>>> a541309f0c3ba9756e0b078e2a4b9fcc9d145531
