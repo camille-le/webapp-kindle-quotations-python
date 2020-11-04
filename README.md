@@ -12,8 +12,8 @@ https://blastoise.pythonanywhere.com
 ## Screenshots
 Sample Input File (HTML with CSS Formatting, loaded in Browser): 
 
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300"/>
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" width="200" style="float:right"/>
+<img src="kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300"/>
+<img src="kindle_quotations/static/sample_output.png" alt="Sample output file from web-app" width="200" style="float:right"/>
 
 ## Tech/Frameworks Used
 <b>Built with</b>
