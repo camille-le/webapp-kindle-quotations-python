@@ -22,7 +22,8 @@ https://blastoise.pythonanywhere.com
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) 
 
 ## Features
-* Convert Kindle app's HTML/XML files to CSV 
+* Convert Kindle app's HTML/XML files to CSV and download file 
+* Convert Kindle app's HTML/XML files to JSON and download file 
 
 ## Installation
 Below is an example of how to get a development environment running. 
