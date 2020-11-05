@@ -17,27 +17,16 @@ app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024 # 1 MB
 
 
 @app.route("/")
-@app.route("/home", methods=['GET','POST'])
-def home():                 
-    if request.method == 'POST':        
-        # check if the post request has the file part 
-        if 'file' not in request.files:  
-            flash('No file part')          
-            return redirect(request.url)
-        file = request.files['file']
-        
-        # if user does not select file, browser also 
-        # submit an empty part without filename 
-        if file.filename == '':
-            flash('No file selected', category='')
-            return redirect(request.url)
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))               
-            if request.form['download'] == 'Download CSV':                     
-                return download_csv(filename)                                      
-    return render_template('home.html') 
-    
+@app.route("/home", methods=['GET', 'POST'])
+def home(): 
+    form = HTMLtoCSVForm() 
+    if form.validate_on_submit():         
+        upload_file = form.filename.data # FileStore object         
+        fname = secure_filename(upload_file.filename) 
+        upload_file.save(os.path.join(app.config['UPLOAD_FOLDER'], fname))
+        if form.submit.label.text == "Download CSV":   
+            return download_csv(fname)                              
+    return render_template('home.html', form=form)
 
 
 @app.route('/uploads/<filename>')
