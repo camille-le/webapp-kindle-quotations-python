@@ -6,9 +6,6 @@ from wtforms import SubmitField
 
 class HTMLtoCSVForm(FlaskForm):
     filename = FileField(validators=[FileRequired()]) 
-    submit = SubmitField('Sign Up')
+    submit = SubmitField('Download CSV')
 
-#class HTMLtoJSONForm(FlaskForm):
- #   filename = FileField()
-    #submit = SubmitField('Sign Up')
 

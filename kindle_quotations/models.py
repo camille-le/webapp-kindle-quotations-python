@@ -85,7 +85,7 @@ class KindleParser(HTMLParser):
             self.b_text = False
 
 
-class CsvTextBuilder(object):
+class KindleCsvTextBuilder(object):
     def __init__(self):
         self.csv_string = []
 
@@ -94,11 +94,11 @@ class CsvTextBuilder(object):
 
 def process(filepath, filetype):
 
-    # Create Kindle Book and Kindle Quotations in Memory
+    # Create KindleBook and KindleQuotations objects 
     kindle_book = None 
     kindle_quotations = None
 
-    # Read file into UTF-8 
+    # Read in XML file, store data in KindleBook and KindleQuotations objects 
     with open(filepath, 'r', encoding='utf-8') as file:        
         file_text = file.read()
 
@@ -109,9 +109,9 @@ def process(filepath, filetype):
         kindle_quotations = parser.list_of_quotations
         file.close() 
 
-    # Return string format of csv file 
+    # Write KindleBook and KindleQuotations into a CSV text builder; return CSV text builder 
     if filetype == 'csv':         
-        csvfile = CsvTextBuilder() 
+        csvfile = KindleCsvTextBuilder() 
         writer = csv.writer(csvfile)
         writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
         for quotation in kindle_quotations: 
@@ -119,6 +119,7 @@ def process(filepath, filetype):
             quotation.page_number, quotation.text, quotation.section_heading])        
         csv_string = csvfile.csv_string    
         return ''.join(csv_string) 
+        
     elif filetype == 'json': 
         kindle_dict = [] 
         for quotation in kindle_quotations: 

@@ -23,7 +23,6 @@ https://blastoise.pythonanywhere.com
 
 ## Features
 * Convert Kindle app's HTML/XML files to CSV 
-* Convert Kindle app's HTML/XML Files to JSON 
 
 ## Installation
 Below is an example of how to get a development environment running. 
@@ -60,7 +59,4 @@ _Articles:_
 * [MySQL Commands](http://g2pc1.bu.edu/~qzpeng/manual/MySQL%20Commands.htm) 
 * [Handling File Uploads with Flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask) 
 * [Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
-<<<<<<< HEAD
 * [Flask-WTF Documentation](https://flask-wtf.readthedocs.io/en/latest/form.html#module-flask_wtf.file)
-=======
->>>>>>> a541309f0c3ba9756e0b078e2a4b9fcc9d145531

@@ -8,18 +8,13 @@ from kindle_quotations.forms import HTMLtoCSVForm
 import io; io.StringIO()
 
 
-
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
 ALLOWED_EXTENSIONS = {'html', 'xml'}
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024 # 1 MB
 
-# Max File Size is 1 MB
-app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
-
-def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/")
 @app.route("/home", methods=['GET','POST'])
@@ -44,6 +39,21 @@ def home():
     return render_template('home.html') 
     
 
+
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):       
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+
+
+@app.route('/contact') 
+def contact(): 
+    return render_template('contact.html')
+
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 def download_csv(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)     
     data = process(filepath, 'csv') # returns a string with newlines     
@@ -58,24 +68,4 @@ def download_csv(filename):
     response.headers["Content-type"] = "text/csv"
     response.mimetype='text/csv'
     return response        
-
-# def download_json(filename):         
-#     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)     
-#     data = process(filepath, 'json') # returns a dict 
-#     resp = make_response(json.dumps(data)) 
-#     response.headers["Content-Disposition"] = "attachment; filename=export.json"
-#     resp.headers["Content-type"] = 'application/json'
-#     resp.mimetype='application/json'
-#     print("some success")
-#     return resp
-
-@app.route('/uploads/<filename>')
-def uploaded_file(filename):       
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
-
-
-@app.route('/contact')    
-def contact(): 
-    form = HTMLtoCSVForm() 
-    return render_template('contact.html', title="Testing HTML to CSV", form=form)
 
