@@ -2,30 +2,21 @@
 {% block content %}   
 
 
-<form method=post enctype=multipart/form-data action="{{ url_for('home') }}">
-    <h2>HTML/XML to CSV</h2>
-    <div class="input-group">
-        <div class="custom-file">
-          <input type="file" name="file" class="custom-file-input" id="inputGroupFile04">
-          <label class="custom-file-label" for="inputGroupFile04" id="inputGroupFile04-label">Choose File</label>
-        </div>
-        <div class="input-group-append">          
-          <input class="btn btn-outline-secondary" type=submit name="download" value="Download CSV">
-        </div>        
-    </div>
-    <br><br> 
-    
-    <!-- <h2>HTML/XML to JSON</h2>
-    <div class="input-group">
-        <div class="custom-file">
-          <input type="file" name="file" class="custom-file-input" id="inputGroupFile05">
-          <label class="custom-file-label" for="inputGroupFile05" id="inputGroupFile05-label">Choose File</label>
-        </div>
-        <div class="input-group-append">          
-          <input class="btn btn-outline-secondary" type=submit name="download" value="Download JSON">
-        </div>
-    </div> -->
-    
+<form method="POST" enctype=multipart/form-data action="{{ url_for('home') }}">
+  <h2>HTML/XML to CSV</h2>
+  {{ form.hidden_tag() }}
+            
+  <div class="input-group">
+      <div class="custom-file">              
+        {{ form.filename(class="custom-file-input", id="inputGroupFile04") }}              
+        {{ form.filename.label(class="custom-file-label", id="inputGroupFile04-label") }}              
+      </div>
+      <div class="input-group-append">                        
+        <p>{{ form.submit(class="btn btn-outline-secondary") }}</p>
+      </div>        
+  </div>   
+  <br><br> 
+
 </form>
 
 {% endblock content %}   

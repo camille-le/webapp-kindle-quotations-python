@@ -4,9 +4,8 @@ from flask import render_template, url_for, flash, redirect, request, send_from_
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
+from kindle_quotations.forms import HTMLtoCSVForm
 import io; io.StringIO()
-
-import json
 
 
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
@@ -14,35 +13,35 @@ ALLOWED_EXTENSIONS = {'html', 'xml'}
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024 # 1 MB
 
-# Max File Size is 1 MB
-app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
+
+@app.route("/")
+@app.route("/home", methods=['GET', 'POST'])
+def home(): 
+    form = HTMLtoCSVForm() 
+    if form.validate_on_submit():         
+        upload_file = form.filename.data # FileStore object         
+        fname = secure_filename(upload_file.filename) 
+        upload_file.save(os.path.join(app.config['UPLOAD_FOLDER'], fname))
+        if form.submit.label.text == "Download CSV":   
+            return download_csv(fname)                              
+    return render_template('home.html', form=form)
+
+
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):       
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+
+
+@app.route('/contact') 
+def contact(): 
+    return render_template('contact.html')
+
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route("/")
-@app.route("/home", methods=['GET','POST'])
-def home():                 
-    if request.method == 'POST':        
-        # check if the post request has the file part 
-        if 'file' not in request.files:  
-            flash('No file part')          
-            return redirect(request.url)
-        file = request.files['file']
-        
-        # if user does not select file, browser also 
-        # submit an empty part without filename 
-        if file.filename == '':
-            flash('No file selected', category='')
-            return redirect(request.url)
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))               
-            if request.form['download'] == 'Download CSV':                     
-                return download_csv(filename)                                      
-    return render_template('home.html') 
-    
 
 def download_csv(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)     
@@ -58,23 +57,4 @@ def download_csv(filename):
     response.headers["Content-type"] = "text/csv"
     response.mimetype='text/csv'
     return response        
-
-# def download_json(filename):         
-#     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)     
-#     data = process(filepath, 'json') # returns a dict 
-#     resp = make_response(json.dumps(data)) 
-#     response.headers["Content-Disposition"] = "attachment; filename=export.json"
-#     resp.headers["Content-type"] = 'application/json'
-#     resp.mimetype='application/json'
-#     print("some success")
-#     return resp
-
-@app.route('/uploads/<filename>')
-def uploaded_file(filename):       
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
-
-
-@app.route('/contact')    
-def contact(): 
-    return render_template('contact.html')
 
