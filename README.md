@@ -60,3 +60,4 @@ _Articles:_
 * [Handling File Uploads with Flask](https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask) 
 * [Flask File Upload Download](https://docs.faculty.ai/user-guide/apis/flask_apis/flask_file_upload_download.html)
 * [Flask-WTF Documentation](https://flask-wtf.readthedocs.io/en/latest/form.html#module-flask_wtf.file)
+* [io — Core tools for working with streams](https://docs.python.org/3/library/io.html)

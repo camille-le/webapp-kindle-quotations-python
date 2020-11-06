@@ -1,5 +1,6 @@
-import csv
+import csv, json
 from html.parser import HTMLParser
+from flask import make_response
 
 
 
@@ -92,47 +93,55 @@ class KindleCsvTextBuilder(object):
     def write(self, row):
         self.csv_string.append(row)
 
-def process(filepath, filetype):
 
-    # Create KindleBook and KindleQuotations objects 
-    kindle_book = None 
-    kindle_quotations = None
+def process_csv(upload_file):     
+    parser = KindleParser()
+    parser.feed(upload_file) 
+    kindle_book = parser.kindle_book
+    kindle_quotations = parser.list_of_quotations
 
-    # Read in XML file, store data in KindleBook and KindleQuotations objects 
-    with open(filepath, 'r', encoding='utf-8') as file:        
-        file_text = file.read()
+    csvfile = KindleCsvTextBuilder() 
+    writer = csv.writer(csvfile)
+    writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
+    for quotation in kindle_quotations: 
+        writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
+        quotation.page_number, quotation.text, quotation.section_heading])        
+    csv_string = csvfile.csv_string    
+    return ''.join(csv_string) 
+    
 
-        parser = KindleParser()
-        parser.feed(file_text)
+def process_json(upload_file):    
+    parser = KindleParser()
+    parser.feed(upload_file) 
+    kindle_book = parser.kindle_book
+    kindle_quotations = parser.list_of_quotations
         
-        kindle_book = parser.kindle_book
-        kindle_quotations = parser.list_of_quotations
-        file.close() 
-
-    # Write KindleBook and KindleQuotations into a CSV text builder; return CSV text builder 
-    if filetype == 'csv':         
-        csvfile = KindleCsvTextBuilder() 
-        writer = csv.writer(csvfile)
-        writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
-        for quotation in kindle_quotations: 
-            writer.writerow([kindle_book.title, kindle_book.authors, kindle_book.citation, 
-            quotation.page_number, quotation.text, quotation.section_heading])        
-        csv_string = csvfile.csv_string    
-        return ''.join(csv_string) 
-        
-    elif filetype == 'json': 
-        kindle_dict = [] 
-        for quotation in kindle_quotations: 
-            kindle_dict.append({ "title": kindle_book.title, "authors": kindle_book.authors,
+    kindle_dict = [] 
+    for quotation in kindle_quotations: 
+        kindle_dict.append({ "title": kindle_book.title, "authors": kindle_book.authors,
             "citation": kindle_book.citation, "page_number": quotation.page_number, 
             "text": quotation.text, "section_heading": quotation.section_heading})             
-        return kindle_dict
-    return '' 
+    return kindle_dict
+        
+def download_json(filestore):     
+    data = process_json(filestore)
+    content_disposition = "attachment; filename="
+    content_disposition += "newbook" + ".json"
+    response = make_response(json.dumps(data, indent=2)) 
+    response.headers["Content-Disposition"] = content_disposition
+    response.mimetype = 'application/json' 
+    return response
 
 
-
-
-
+def download_csv(filestore): 
+    data = process_csv(filestore)    
+    response = make_response(data)
+    content_disposition = "attachment; filename="
+    content_disposition += "newbook" + ".csv"
+    response.headers["Content-Disposition"] = content_disposition
+    response.headers["Content-type"] = "text/csv"
+    response.mimetype='text/csv'
+    return response        
      
 
     
