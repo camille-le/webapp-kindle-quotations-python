@@ -1,6 +1,6 @@
-from html.parser import HTMLParser
 import csv
-import io 
+from html.parser import HTMLParser
+
 
 
 class KindleBook:

@@ -1,12 +1,10 @@
-import os 
-import random
-from flask import render_template, url_for, flash, redirect, request, send_from_directory, make_response, jsonify
+import json, os, random, io; io.StringIO()
+from flask import render_template, flash, send_from_directory, make_response 
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
 from kindle_quotations.models import process
 from kindle_quotations.forms import HTMLtoCSVForm, HTMLtoJSONForm
-import io; io.StringIO()
-import json
+
 
 
 UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
