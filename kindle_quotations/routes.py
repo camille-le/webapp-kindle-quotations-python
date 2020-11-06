@@ -1,8 +1,8 @@
 import json, os, random, io; io.StringIO()
-from flask import render_template, flash, send_from_directory, make_response 
+from flask import render_template 
 from werkzeug.utils import secure_filename
 from kindle_quotations import app 
-from kindle_quotations.models import process_csv, process_json, download_csv, download_json
+from kindle_quotations.models import download_csv, download_json
 from kindle_quotations.forms import HTMLtoCSVForm, HTMLtoJSONForm
 
 
@@ -44,11 +44,6 @@ def htmljson():
         output.write(upload_file) 
         return download_json(upload_file) 
     return render_template(HOME, csv_form=csv_form, json_form=json_form)    
-
-
-@app.route('/uploads/<filename>')
-def uploaded_file(filename):       
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
 
 
 @app.route('/contact') 
