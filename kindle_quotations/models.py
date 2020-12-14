@@ -157,10 +157,17 @@ def download_json(upload_file):
 
 def download_csv(upload_file): 
     kind_io = KindleIO(upload_file) 
-    data = kind_io.process_csv() 
+    data = kind_io.process_csv()     
     return kind_io.get_csv(data)
 
 
+def temp_csv(upload_file): 
+    kind_io = KindleIO(upload_file) 
+    data = kind_io.process_csv()     
+    print(data)
+
+
      
+
 
     

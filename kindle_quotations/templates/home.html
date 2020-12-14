@@ -2,14 +2,16 @@
 {% block content %}   
 
 <form method="POST" enctype=multipart/form-data action="{{ url_for('csv') }}">
+  
   <h2>HTML/XML to CSV</h2>
   {{ csv_form.hidden_tag() }}
             
   <div class="input-group">
-      <div class="custom-file">              
+      <div class="custom-file">                      
         {{ csv_form.filename(class="custom-file-input", id="inputGroupFile04") }}              
-        {{ csv_form.filename.label(class="custom-file-label", id="inputGroupFile04-label") }}              
+        {{ csv_form.filename.label(class="custom-file-label", id="inputGroupFile04-label") }}                    
       </div>
+      
       <div class="input-group-append">                        
         <p>{{ csv_form.submit1(class="btn btn-outline-secondary") }}</p>
       </div>        
@@ -32,4 +34,7 @@
   </div>   
   <br><br> 
 </form>
+
+
+
 {% endblock content %}   
