@@ -1,35 +1,35 @@
 {% extends "layout.html" %}
-{% block content %}   
+{% block content %}
 
 <form method="POST" enctype=multipart/form-data action="{{ url_for('csv') }}">
   <h2>HTML/XML to CSV</h2>
   {{ csv_form.hidden_tag() }}
-            
   <div class="input-group">
-      <div class="custom-file">              
-        {{ csv_form.filename(class="custom-file-input", id="inputGroupFile04") }}              
-        {{ csv_form.filename.label(class="custom-file-label", id="inputGroupFile04-label") }}              
+      <div class="custom-file">
+        {{ csv_form.filename(class="custom-file-input", id="inputGroupFile04") }}
+        {{ csv_form.filename.label(class="custom-file-label", id="inputGroupFile04-label") }}
       </div>
-      <div class="input-group-append">                        
+      <div class="input-group-append">
         <p>{{ csv_form.submit1(class="btn btn-outline-secondary") }}</p>
-      </div>        
-  </div>   
-  <br><br> 
+      </div>
+  </div>
+  <br><br>
 </form>
 
 <form method="POST" enctype=multipart/form-data action="{{ url_for('htmljson') }}">
   <h2>HTML/XML to JSON</h2>
   {{ json_form.hidden_tag() }}
-            
+
   <div class="input-group">
-      <div class="custom-file">              
-        {{ json_form.filename(class="custom-file-input", id="inputGroupFile05") }}              
-        {{ json_form.filename.label(class="custom-file-label", id="inputGroupFile05-label") }}              
+      <div class="custom-file">
+        {{ json_form.filename(class="custom-file-input", id="inputGroupFile05") }}
+        {{ json_form.filename.label(class="custom-file-label", id="inputGroupFile05-label") }}
       </div>
-      <div class="input-group-append">                        
+      <div class="input-group-append">
         <p>{{ json_form.submit2(class="btn btn-outline-secondary") }}</p>
-      </div>        
-  </div>   
-  <br><br> 
+      </div>
+  </div>
+  <br><br>
 </form>
-{% endblock content %}   
+
+{% endblock content %}
