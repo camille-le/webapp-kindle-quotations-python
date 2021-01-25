@@ -1,10 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_dropzone import Dropzone
-import os 
+import os
 
 app = Flask(__name__)
-app.secret_key = "[password]" 
-dropzone = Dropzone(app)
+app.secret_key = "[password]"
 
 from kindle_quotations import routes

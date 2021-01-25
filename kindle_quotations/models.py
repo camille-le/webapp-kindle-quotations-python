@@ -31,10 +31,8 @@ class KindleHTMLParser(HTMLParser):
 
     def __init__(self):
         super().__init__()
-        
         self.b_title, self.b_authors, self.b_citation = False, False, False
         self.b_section_heading, self.b_page_number, self.b_text = False, False, False
-        
         self.title, self.authors, self.citation = "", "", ""
         self.section_heading, self.curr_page_number = "(empty)", ""
 
@@ -81,8 +79,8 @@ class KindleHTMLParser(HTMLParser):
         elif self.b_page_number:
             self.curr_page_number = data
         elif self.b_text:
-            last_book = self.list_of_quotations[-1]                                    
-            last_book.text = data             
+            last_book = self.list_of_quotations[-1]
+            last_book.text = data
             self.b_text = False
 
 
@@ -94,80 +92,71 @@ class KindleCsvTextBuilder(object):
         self.csv_string.append(row)
 
 
-class KindleIO: 
-    def __init__(self, upload_file): 
+class KindleIO:
+    def __init__(self, upload_file):
         parser = KindleHTMLParser()
-        parser.feed(upload_file) 
+        parser.feed(upload_file)
         self.kindle_book = parser.kindle_book
         self.kindle_quotations = parser.list_of_quotations
 
-    ''' 
+    '''
     returns a string representation of a csv file
-    ''' 
-    def process_csv(self): 
-        csvfile = KindleCsvTextBuilder() 
+    '''
+    def process_csv(self):
+        csvfile = KindleCsvTextBuilder()
         writer = csv.writer(csvfile)
         writer.writerow(["title", "authors", "citation", "page_number", "text", "section_heading"])
-        for self.quotation in self.kindle_quotations: 
-            writer.writerow([self.kindle_book.title, self.kindle_book.authors, self.kindle_book.citation, 
-            self.quotation.page_number, self.quotation.text, self.quotation.section_heading])        
-        csv_string = csvfile.csv_string    
-        return ''.join(csv_string) 
+        for self.quotation in self.kindle_quotations:
+            writer.writerow([self.kindle_book.title, self.kindle_book.authors, self.kindle_book.citation,
+            self.quotation.page_number, self.quotation.text, self.quotation.section_heading])
+        csv_string = csvfile.csv_string
+        return ''.join(csv_string)
 
     '''
-    returns a list of dictionaries 
+    returns a list of dictionaries
     '''
-    def process_json(self): 
-        kindle_dict = [] 
-        for self.quotation in self.kindle_quotations: 
+    def process_json(self):
+        kindle_dict = []
+        for self.quotation in self.kindle_quotations:
             kindle_dict.append({ "title": self.kindle_book.title, "authors": self.kindle_book.authors,
-            "citation": self.kindle_book.citation, "page_number": self.quotation.page_number, 
-            "text": self.quotation.text, "section_heading": self.quotation.section_heading})             
+            "citation": self.kindle_book.citation, "page_number": self.quotation.page_number,
+            "text": self.quotation.text, "section_heading": self.quotation.section_heading})
         return kindle_dict
-    
+
     '''
-    generates json response 
+    generates json response
     '''
-    def get_json(self, data): 
+    def get_json(self, data):
         content_disposition = "attachment; filename="
         content_disposition += self.kindle_book.title + ".json"
-        response = make_response(json.dumps(data, indent=2)) 
+        response = make_response(json.dumps(data, indent=2))
         response.headers["Content-Disposition"] = content_disposition
-        response.mimetype = 'application/json' 
+        response.mimetype = 'application/json'
         return response
-    
-    ''' 
+
+    '''
     generates csv data
-    ''' 
-    def get_csv(self, data): 
+    '''
+    def get_csv(self, data):
         response = make_response(data)
         content_disposition = "attachment; filename="
         content_disposition += self.kindle_book.title + ".csv"
         response.headers["Content-Disposition"] = content_disposition
         response.headers["Content-type"] = "text/csv"
         response.mimetype='text/csv'
-        return response        
+        return response
 
-
-def download_json(upload_file): 
-    kind_io = KindleIO(upload_file) 
-    data = kind_io.process_json() 
+def download_json(upload_file):
+    kind_io = KindleIO(upload_file)
+    data = kind_io.process_json()
     return kind_io.get_json(data)
 
-
-def download_csv(upload_file): 
-    kind_io = KindleIO(upload_file) 
-    data = kind_io.process_csv()     
+def download_csv(upload_file):
+    kind_io = KindleIO(upload_file)
+    data = kind_io.process_csv()
     return kind_io.get_csv(data)
 
-
-def temp_csv(upload_file): 
-    kind_io = KindleIO(upload_file) 
-    data = kind_io.process_csv()     
+def temp_csv(upload_file):
+    kind_io = KindleIO(upload_file)
+    data = kind_io.process_csv()
     print(data)
-
-
-     
-
-
-    
