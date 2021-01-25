@@ -6,9 +6,6 @@ Currently, with the Kindle app, you can email your favorite quotations to yourse
 in the form of an HTML document with CSS formatting. However, the Kindle app does not
 provide a way for a person or computer to easily extract the quotations data.
 
-Here is a demo of this project:
-https://blastoise.pythonanywhere.com
-
 <img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_input.png" alt="Sample web-app"/> 
 
 ## Current Features (As of November 4th, 2020) 
