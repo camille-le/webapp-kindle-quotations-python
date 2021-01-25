@@ -9,8 +9,12 @@ provide a way for a person or computer to easily extract the quotations data.
 Here is a demo of this project:
 https://blastoise.pythonanywhere.com
 
-<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_input.png" alt="Sample web-app"/>
+<img src="https://github.com/camille-le/webapp-kindle-quotations-python/blob/main/kindle_quotations/static/sample_input.png" alt="Sample web-app"/> 
 
+## Current Features (As of November 4th, 2020) 
+* Convert Kindle app's HTML/XML files to CSV and download file 
+* Convert Kindle app's HTML/XML files to JSON and download file 
+ 
 ## Screenshots
 
 <img src="kindle_quotations/static/sample_kindle_export.png" alt="Sample export from Kindle app" width="300"/>
@@ -20,9 +24,6 @@ https://blastoise.pythonanywhere.com
 <b>Built with</b>
 - [Python 3.8](https://www.python.org/download/releases/3.0/)
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-
-## Features
-* Convert Kindle app's HTML/XML files to CSV
 
 ## Installation
 Below is an example of how to get a development environment running.
