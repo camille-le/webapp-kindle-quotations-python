@@ -25,7 +25,6 @@ class KindleQuotation:
 
 
 class KindleHTMLParser(HTMLParser):
-
     kindle_book = None
     list_of_quotations = []
 
@@ -61,8 +60,17 @@ class KindleHTMLParser(HTMLParser):
     def process_page_number(self):
         return self.curr_page_number.split()[-1]
 
-    def handle_data(self, data):
+    def clean_macroman_chars(self, data):
         data = data.strip()
+        data = list(data)
+        macroman_map = {"’": "'", '“': '"', "”": '"', "—":"-"}
+        for idx, char in enumerate(data):
+          if char in macroman_map.keys():
+            data[idx] = macroman_map[char]
+        return ''.join(data)
+
+    def handle_data(self, data):
+        data = self.clean_macroman_chars(data)
         if self.b_title:
             self.title = data
             self.b_title = False
@@ -155,8 +163,3 @@ def download_csv(upload_file):
     kind_io = KindleIO(upload_file)
     data = kind_io.process_csv()
     return kind_io.get_csv(data)
-
-def temp_csv(upload_file):
-    kind_io = KindleIO(upload_file)
-    data = kind_io.process_csv()
-    print(data)
